@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2c3e50;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-layout {
+  min-height: 100vh;
+  background: white;
+}
+
+.main-content {
+  min-height: calc(100vh - 64px);
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #45a049, #7cb342);
+}
+
+/* Loading animations */
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Ant Design overrides */
+.ant-layout {
+  background: white !important;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(45deg, #4CAF50, #8BC34A) !important;
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3) !important;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(45deg, #45a049, #7cb342) !important;
+  box-shadow: 0 4px 16px rgba(76, 175, 80, 0.4) !important;
+  transform: translateY(-1px);
+}
+
+.ant-card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+}
+
+.ant-typography h1,
+.ant-typography h2,
+.ant-typography h3,
+.ant-typography h4 {
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+}
+
+.ant-typography p {
+  line-height: 1.6 !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .ant-layout-header,
+  .ant-layout-footer {
+    display: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .ant-card {
+    border: 2px solid #000 !important;
+  }
+  
+  .ant-btn-primary {
+    background: #000 !important;
+    color: #fff !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}

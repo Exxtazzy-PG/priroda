@@ -1,0 +1,238 @@
+.about-content {
+  min-height: calc(100vh - 64px);
+}
+
+.about-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.about-title {
+  color: white !important;
+  font-size: 3rem !important;
+  font-weight: bold !important;
+  margin-bottom: 24px !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-description {
+  color: white !important;
+  font-size: 1.2rem !important;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.stats-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.section-title {
+  text-align: center !important;
+  color: #2c3e50 !important;
+  margin-bottom: 60px !important;
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+}
+
+.stat-card {
+  text-align: center;
+  height: 100%;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+  padding: 24px !important;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.15) !important;
+}
+
+.stat-icon {
+  font-size: 48px;
+  color: #4CAF50;
+  margin-bottom: 16px;
+}
+
+.stat-card .ant-statistic-title {
+  color: #666 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+}
+
+.timeline-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.evolution-timeline {
+  padding: 24px 0;
+}
+
+.evolution-timeline .ant-timeline-item-content h4 {
+  color: #2c3e50 !important;
+  margin-bottom: 8px !important;
+}
+
+.evolution-timeline .ant-timeline-item-content p {
+  color: #666 !important;
+  font-size: 16px !important;
+  line-height: 1.6;
+}
+
+.timeline-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.15);
+}
+
+.threats-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.threats-title {
+  color: white !important;
+}
+
+.threats-description {
+  color: white !important;
+  font-size: 1.2rem !important;
+  max-width: 600px;
+  margin: 0 auto 60px !important;
+  opacity: 0.9;
+}
+
+.threat-card {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+  padding: 24px !important;
+  backdrop-filter: blur(10px);
+}
+
+.threat-card h4 {
+  color: #2c3e50 !important;
+  margin-bottom: 20px !important;
+}
+
+.threat-progress {
+  margin-bottom: 16px;
+}
+
+.threat-text {
+  color: #666 !important;
+  margin-bottom: 0 !important;
+  font-weight: 500;
+}
+
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  color: white;
+}
+
+.cta-title {
+  color: white !important;
+  font-size: 2.5rem !important;
+  margin-bottom: 24px !important;
+}
+
+.cta-description {
+  color: white !important;
+  font-size: 1.2rem !important;
+  margin-bottom: 60px !important;
+  opacity: 0.9;
+}
+
+.action-card {
+  width: 200px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+  padding: 32px 24px !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.action-card:hover {
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.25) !important;
+  transform: translateY(-5px);
+}
+
+.action-icon {
+  font-size: 48px;
+  color: #4CAF50;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.action-card h4 {
+  color: #2c3e50 !important;
+  margin-bottom: 12px !important;
+}
+
+.action-card p {
+  color: #666 !important;
+  margin-bottom: 0 !important;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.5rem !important;
+  }
+  
+  .about-description {
+    font-size: 1rem !important;
+  }
+  
+  .section-title {
+    font-size: 2rem !important;
+  }
+  
+  .cta-title {
+    font-size: 2rem !important;
+  }
+  
+  .action-card {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .timeline-section .ant-row {
+    flex-direction: column-reverse;
+  }
+  
+  .timeline-image {
+    margin-bottom: 40px;
+  }
+}
